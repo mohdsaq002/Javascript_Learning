@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rick and Morty Characters</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Rick and Morty Characters</h1>
+
+  <div class="filter-container">
+    <div class="filter-inputs">
+      <label for="filterName">Name:</label>
+      <input type="text" id="filterName" placeholder="Enter name">
+
+      <label for="filterSpecies">Species:</label>
+      <select id="filterSpecies">
+        <option value="">All</option>
+        <option value="Human">Human</option>
+        <option value="Humanoid">Humanoid</option>
+        <option value="Cronenberg">Cronenberg</option>
+      </select>
+
+      <label for="filterGender">Gender:</label>
+      <select id="filterGender">
+        <option value="">All</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="genderless">Genderless</option>
+        <option value="unknown">Unknown</option>
+      </select>
+    </div>
+    <button id="filterButton">Filter</button>
+  </div>
+
+  <div class="character-container" id="characterContainer"></div>
+
+  <div class="load-more-container">
+    <button id="loadMoreButton">Load More</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
